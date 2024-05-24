@@ -1,0 +1,31 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <title>Employee Department</title>  
+    {% load static %}  
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"/>  
+</head>  
+<body>  
+<table class="table table-striped table-bordered table-sm">  
+    <thead class="thead-dark">  
+    <tr>  
+        <th>Department ID</th>  
+        <th>Employee Name</th>  
+    </tr>  
+    </thead>  
+    <tbody>  
+{% for emp in dep %}  
+    <tr>  
+        <td>{{ emp.did }}</td>  
+        <td>{{ emp.ename }}</td>  
+ 
+    </tr>  
+{% endfor %}  
+    </tbody>  
+</table>  
+<br>  
+<br>  
+
+</body>  
+</html>  
